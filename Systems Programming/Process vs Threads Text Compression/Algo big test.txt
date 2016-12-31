@@ -1,0 +1,53 @@
+Aglorithm comparison test.
+
+
+Input file :
+
+"hh,.,.///.,/.,//. hhhhhi       iidafi"asdfa sdfads dddddd,.,dddlkj kljlkjlks kkadsjkfnak cakjskshkh,.,jkjhk,.,siuyhjkh,.,a sd,.,     iidafi"asdfa sdfads ddddddlkj kljlkjlks kkadsjkfnak cakjs,.,kshkhjkj.,.,.,.,.hksiuyhjkha sd     iidafi"asdfa sdfads ddddddddlkj klj,.,lkjlks kkadsjkfnak,., cakjskshk,.,hjkjhksiuyh,.,jkha sd     iidafi"asdfa sdfads ddddddlkj kljlkjlks kkadsjkfnak cakjskshkhjkjhksiuyhjkha sd 
+
+
+INTO LOLS 1 THREAD ENCODING : 274 chars
+
+7h3idafiasdfasdfads9dlkjkljlkjlkskkadsjkfnakcakjskshkhjkjhksiuyhjkhasdiidafiasdfasdfads6dlkjkljlkjlkskkadsjkfnakcakjskshkhjkjhksiuyhjkhasdiidafiasdfasdfads8dlkjkljlkjlkskkadsjkfnakcakjskshkhjkjhksiuyhjkhasdiidafiasdfasdfads6dlkjkljlkjlkskkadsjkfnakcakjskshkhjkjhksiuyhjkhasd
+
+
+INT LWZ 1 THREAD ENCODING : 176 chars
+
+$&(*,\s.]9_j{l}k:a<k>k@jsks"k"jkj"ksiuy"jk"[ii(*,\s.]6_j{l}k:a<k>k@jsks"k"jkj"ksiuy"jk"[ii(*,\s.]8_j{l}k:a<k>k@jsks"k"jkj"ksiuy"jk"[ii(*,\s.]6_j{l}k:a<k>k@jsks"k"jkj"ksiuy"jk"[ 
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Same input file:
+
+
+
+INTO LOLS 3 THREAD ENCODING :
+
+
+LOLS THREAD 1 : 73 chars
+
+7h3idafiasdfasdfads9dlkjkljlkjlkskkadsjkfnakcakjskshkhjkjhksiuyhjkhasdiid
+
+LZW THREAD 1 : 48 chars
+
+$&(*,\s.]9_j{l}k:a<k>k@jsks"k"jkj"ksiuy"jk"[i'
+
+LOLS THREAD 2 : 95 chars
+
+afiasdfasdfads6dlkjkljlkjlkskkadsjkfnakcakjskshkhjkjhksiuyhjkhasdiidafiasdfasdfads8dlkjkljlkjlk
+
+LZW THREAD 2 : 54 chars
+
+!%',(*d.l[l]j_k{s}n:!<k>h@hks#uyhjkh+##d!%',s)-8/j\l^k
+
+LOLS THREAD 3 : 106 chars
+
+skkadsjkfnakcakjskshkhjkjhksiuyhjkhasdiidafiasdfasdfads6dlkjkljlkjlkskkadsjkfnakcakjskshkhjkjhksiuyhjkhasd
+
+LZW THREAD 3 : 58 chars
+
+!%')+-/\!^"`j|i~*;ii=a@!dfa(6dl"*ljl"jl"!%')+-/\!^"`j|i~*;
